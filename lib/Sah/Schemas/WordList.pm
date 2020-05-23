@@ -6,6 +6,6 @@ package Sah::Schemas::WordList;
 1;
 # ABSTRACT: Sah schemas related to WordList
 
-=head1 SEE ALSO
+=head1 append:SEE ALSO
 
 L<WordList>
