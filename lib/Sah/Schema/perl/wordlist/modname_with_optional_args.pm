@@ -28,6 +28,14 @@ _
     # XXX also provide completion for arguments
     'x.completion' => ['perl_modname', {ns_prefix=>'WordList'}],
 
+
+    examples => [
+        {value=>'', valid=>0},
+        {value=>'Foo/Bar', valid=>1, validated_value=>'Foo::Bar'},
+        {value=>'Foo/Bar=a,1,b,2', valid=>1, validated_value=>'Foo::Bar=a,1,b,2'},
+        {value=>'Foo bar', valid=>0},
+    ],
+
 }, {}];
 
 1;

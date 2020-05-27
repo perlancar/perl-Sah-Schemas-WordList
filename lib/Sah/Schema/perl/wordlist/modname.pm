@@ -22,6 +22,12 @@ _
     # provide a default completion which is from list of installed perl modules
     'x.completion' => ['perl_modname', {ns_prefix=>'WordList'}],
 
+    examples => [
+        {value=>'', valid=>0},
+        {value=>'EN/Enable', valid=>1, validated_value=>'EN::Enable'},
+        {value=>'Foo bar', valid=>0},
+    ],
+
 }, {}];
 
 1;
