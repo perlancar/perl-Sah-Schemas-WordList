@@ -9,16 +9,17 @@ our $schema = [array => {
     summary => 'Array of Perl WordList::* module names without the prefix, with optional args, e.g. ["EN::Enable", "MetaSyntactic::Any=theme,dangdut"]',
     description => <<'_',
 
-Array of Perl module names, where each element is of `perl::modname` schema,
-e.g. `Foo`, `Foo::Bar`.
+Array of Perl WordList::* module names without the prefix and with optional
+args. Each element is of `perl::modname` schema, e.g. `EN::Enable`,
+`MetaSyntactic::Any=theme,dangdut`.
 
 Contains coercion rule that expands wildcard, so you can specify:
 
-    Module::P*
+    ID::*
 
 and it will be expanded to e.g.:
 
-    ["Module::Patch", "Module::Path", "Module::Pluggable"]
+    ["ID::KBBI", "ID::PERLANCAR"]
 
 The wildcard syntax supports jokers (`?`, `*`, `**`), brackets (`[abc]`), and
 braces (`{one,two}`). See <pm:Module::List::Wildcard> for more details.
