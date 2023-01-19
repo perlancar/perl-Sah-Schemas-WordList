@@ -27,7 +27,7 @@ The wildcard syntax supports jokers (`?`, `*`, `**`), brackets (`[abc]`), and
 braces (`{one,two}`). See <pm:Module::List::Wildcard> for more details.
 
 _
-    of => ["perl::wordlist::modname_with_optional_args", {req=>1}, {}],
+    of => ["perl::wordlist::modname_with_optional_args", {req=>1}],
 
     'x.perl.coerce_rules' => [
         ['From_str_or_array::expand_perl_modname_wildcard', {ns_prefix=>'WordList'}],
@@ -36,7 +36,7 @@ _
     # provide a default completion which is from list of installed perl modules
     'x.element_completion' => ['perl_wordlist_modname_with_optional_args'],
 
-}, {}];
+}];
 
 1;
 # ABSTRACT:

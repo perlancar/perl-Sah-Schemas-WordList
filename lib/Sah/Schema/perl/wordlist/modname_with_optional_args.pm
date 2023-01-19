@@ -37,7 +37,7 @@ _
         {value=>'Foo bar', valid=>0},
     ],
 
-}, {}];
+}];
 
 1;
 # ABSTRACT:
