@@ -1,11 +1,13 @@
 package Sah::Schema::perl::wordlist::modname;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
-our $schema = ['perl::modname' => {
+our $schema = ['str' => {
     summary => 'Perl WordList::* module name without the prefix, e.g. EN::Enable',
     description => <<'_',
 

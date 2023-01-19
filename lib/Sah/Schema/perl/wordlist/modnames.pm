@@ -24,7 +24,7 @@ The wildcard syntax supports jokers (`?`, `*`, `**`), brackets (`[abc]`), and
 braces (`{one,two}`). See <pm:Module::List::Wildcard> for more details.
 
 _
-    of => ["perl::wordlilst::modname", {req=>1}, {}],
+    of => ["perl::wordlist::modname", {req=>1}, {}],
 
     'x.perl.coerce_rules' => [
         ['From_str_or_array::expand_perl_modname_wildcard', {ns_prefix=>'WordList'}],

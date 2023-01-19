@@ -1,5 +1,7 @@
 package Sah::Schema::perl::wordlist::modname_with_optional_args;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -21,13 +23,12 @@ See also: `perl::wordlist::modname`.
 _
     match => '\A[A-Za-z_][A-Za-z_0-9]*(::[A-Za-z_0-9]+)*(?:=.*)?\z',
 
-    'x.perl.coerce_rules' => [
-        ['From_str::normalize_perl_modname', {ns_prefix=>'WordList'}],
+    'prefilters' => [
+        'Perl::normalize_perl_modname',
     ],
 
     # XXX also provide completion for arguments
-    'x.completion' => ['perl_modname', {ns_prefix=>'WordList'}],
-
+    'x.completion' => ['perl_wordlist_modname_with_optional_args'],
 
     examples => [
         {value=>'', valid=>0},
