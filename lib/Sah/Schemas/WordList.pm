@@ -1,6 +1,10 @@
 package Sah::Schemas::WordList;
 
+use strict;
+
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 1;

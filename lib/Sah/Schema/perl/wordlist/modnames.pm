@@ -1,5 +1,7 @@
 package Sah::Schema::perl::wordlist::modnames;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST

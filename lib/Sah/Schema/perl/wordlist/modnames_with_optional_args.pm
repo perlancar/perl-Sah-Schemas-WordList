@@ -1,5 +1,7 @@
 package Sah::Schema::perl::wordlist::modnames_with_optional_args;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -32,7 +34,7 @@ _
     ],
 
     # provide a default completion which is from list of installed perl modules
-    'x.element_completion' => ['perl_modname', {ns_prefix=>'WordList'}],
+    'x.element_completion' => ['perl_wordlist_modname_with_optional_args'],
 
 }, {}];
 
